@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   <html lang="en">
+     <meta charset="UTF-8">
+  <link rel="stylesheet" href="font.css">
+  <link rel="stylesheet" href="main.css">
+
+
+
+<title>Proyecto final</title> 
+
+<style type="text/css">
+* { margin: auto; padding: 0; text-align: center }
+
+#cabecera { background: url(cabecera.jpg) ;
+   font-family: 1.3em adelia; src:url(fuentes/adelia.ttf); } 
+h1 {  color: whitesmoke;text-align: center ; padding: 0.5em ; font-family: adelia;}
+
+#menu { float: center; width: 15h%; }
+#menu img { width: 12%; margin: 1%; cursor: pointer; }
+
+
+#principal { float: center; width: 60%; }
+
+
+#visor { width: 60%; margin-top: 5%; padding: 0.5em; }
+#visor img { width: 60% }
+</style>
+
+<script type="text/javascript">
+window.onload = function() { //tras cargar la página ...
+visor1=document.getElementById("visor"); //referencia al visor
+mititulo=document.getElementById("titulo"); //referencia al pie de foto
+}
+function mifoto(num) { //cambiar la imagen
+         f="foto"+num+".jpg"; //ruta de la nueva imagen
+         document.images["fotoVisor"].src=f; //cambiar imagen
+         t=document.images["fotos"+num].alt; //texto de pie de foto
+         mititulo.innerHTML=t; //cambiar pie de foto
+         }
+</script>
+
+</head>
+<body>
+
+ <div class="Proyectofinal">
+    <a href="https://twitter.com/Natud_?t=gg2Kw8arfZuFPGSSsZovIA&s=09" class="icon icon-twitter" target="_blank"></a>
+    <a href="https://instagram.com/natud_?utm_medium=copy_link" class="icon icon-instagram" target="_blank"></a>
+  </div>
+   
+<div id="cabecera">
+<h1>Productos de la naturaleza para tu salud <br>Natud</h1>
+</div>
+
+<div id="menu">
+
+<a href="#visor"><img src='foto1.jpg' alt='<i><b>La naturaleza nos brinda diversos productos para sanar nuestro cuerpo de manera orgnánica</b></i>.' name='fotos1' onclick="mifoto(1)"/></a>
+<a href="#visor"><img src='foto2.jpg' alt='<i>Crema "Lavanda" humectante<i>. <br> <br>Este producto es el indicado para problemas de piel seca, su función es humectar de manera profunda la piel de todo el cuerpo <br><br> <b>Costo: $ 27.00</b>' name='fotos2' onclick="mifoto(2)"/></a>
+<a href="#visor"><img src='foto3.jpg' alt='<i>Estracto "Curmis" para el metabolismo<i>. <br> <br>Este producto mejora notablemente tu metabolismo y energía, su función es aliviar problemas digestivos, es funcinal y fácil de preparar en forma de té <br><br> <b>Costo: $ 15.99</b>' name='fotos3' onclick="mifoto(3)"/></a>
+<a href="#visor"><img src='foto4.jpg' alt='<i>Aceite escencial "Frescament" para aliviar la congstion nasal<i>. <br> <br>Este producto elaborado de la plata de menta, tiene la capacidad de mejorar la respiración, descongestionando las fosas nasales y mantiene un aroma especial. <br><br> <b>Costo: $ 21.00</b>' name='fotos4' onclick="mifoto(4)"/></a>
+
+</div>
+<div id="principal">
+
+<div id="visor">
+
+   <img src='foto1.jpg' alt='<i><b>La naturaleza nos brinda diversos productos para sanar nuestro cuerpo de manera orgnánica</b></i>.' name='fotoVisor'/>
+   <div id="titulo"><i><b>La naturaleza nos brinda diversos productos para sanar nuestro cuerpo de manera orgnánica</b></i>.</div>
+   </div>
+</div>
+<br>
+<br>
+
+<a href="file:///C:/Users/lopez/Desktop/HTML/Proyecto%20final/factura.html">
+  <center><img src="Compra.jpeg" width="200" height="95"></center></a><br>
+<h3><i>Para un mejor servicio, recuerde marcar su dirección de manera correcta para lograr un amigable servicio de delivery.</i></h3>
+<p><b>Para más información o colsultas sobre nuestros productos o ayuda para realizar la compra, contáctanos por nuestras redes sociales.</b></p><br>
+
+</body>
+</html>
